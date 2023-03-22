@@ -1,9 +1,10 @@
 import React from "react";
 
-const Langauage = ({ onChange }) => {
+const Language = ({ onChange, selectedLanguage }) => {
   return (
     <select
       onChange={onChange}
+      value={selectedLanguage}
       style={{
         width: "200px",
         height: "40px",
@@ -20,4 +21,4 @@ const Langauage = ({ onChange }) => {
   );
 };
 
-export default Langauage;
+export default Language;
